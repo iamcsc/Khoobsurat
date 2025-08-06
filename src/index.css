@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Manyavar-inspired luxury color palette */
+    --background: 45 15% 97%;
+    --foreground: 30 15% 15%;
+
+    --card: 45 25% 95%;
+    --card-foreground: 30 15% 15%;
+
+    --popover: 45 25% 95%;
+    --popover-foreground: 30 15% 15%;
+
+    /* Luxury gold/bronze primary */
+    --primary: 35 45% 45%;
+    --primary-foreground: 45 15% 97%;
+
+    /* Warm cream secondary */
+    --secondary: 45 25% 90%;
+    --secondary-foreground: 30 15% 25%;
+
+    /* Muted earth tones */
+    --muted: 35 20% 85%;
+    --muted-foreground: 30 10% 50%;
+
+    /* Rich accent color */
+    --accent: 15 75% 55%;
+    --accent-foreground: 45 15% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 15% 97%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 88%;
+    --ring: 35 45% 45%;
+
+    /* Custom design tokens */
+    --luxury-gold: 35 65% 55%;
+    --warm-cream: 45 35% 92%;
+    --deep-brown: 25 25% 25%;
+    --celebration-orange: 15 85% 55%;
+    
+    /* Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(var(--celebration-orange)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-luxury: 0 10px 40px -10px hsl(var(--luxury-gold) / 0.3);
+    --shadow-soft: 0 4px 20px -5px hsl(var(--deep-brown) / 0.15);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 25% 8%;
+    --foreground: 45 15% 92%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 45 15% 92%;
+
+    --popover: 25 25% 12%;
+    --popover-foreground: 45 15% 92%;
+
+    --primary: 35 65% 60%;
+    --primary-foreground: 25 25% 8%;
+
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 45 15% 85%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 35 10% 65%;
+
+    --accent: 15 75% 60%;
+    --accent-foreground: 25 25% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 15% 92%;
+
+    --border: 25 15% 18%;
+    --input: 25 15% 18%;
+    --ring: 35 65% 60%;
+
+    /* Dark mode custom tokens */
+    --luxury-gold: 35 65% 60%;
+    --warm-cream: 35 15% 15%;
+    --deep-brown: 45 15% 92%;
+    --celebration-orange: 15 85% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
