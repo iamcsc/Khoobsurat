@@ -1,0 +1,34 @@
+.carousel-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.heading-flower-image {
+  width: 40px;
+  height: 40px;
+  background: url('/public/mainlogo.png') no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+}
+
+.carousel-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #2d2320;
+  margin: 0;
+}
+
+.carousel-heading .first {
+  color: #a3a3a3;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.carousel-heading .last {
+  color: #2d2320;
+  font-weight: 800;
+}

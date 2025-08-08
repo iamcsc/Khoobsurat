@@ -37,6 +37,15 @@
   padding: 2em;
 }
 
+/* Infinite horizontal scroll animation for FeaturedCategories */
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-x {
+  animation: scroll-x 20s linear infinite;
+}
+
 .read-the-docs {
   color: #888;
 }

@@ -7,19 +7,36 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
+  :root {  .animated-couple-bg {
+      background: #f8f1e3;
+      width: 100%;
+      height: 90px !important; /* Match this to your offering bg strip */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    .animated-couple-center {
+      position: relative;
+      width: 350px; /* Adjust as needed */
+      height: 90px !important; /* Match this to your offering bg strip */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     /* Manyavar-inspired luxury color palette */
-    --background: 45 15% 97%;
+    --background: 45 75% 97%;
     --foreground: 30 15% 15%;
 
-    --card: 45 25% 95%;
-    --card-foreground: 30 15% 15%;
+    --card: 0 0% 92%;
+    --card-foreground: 10 15% 15%;
 
     --popover: 45 25% 95%;
     --popover-foreground: 30 15% 15%;
 
     /* Luxury gold/bronze primary */
-    --primary: 35 45% 45%;
+    --primary: 35 35% 45%;
     --primary-foreground: 45 15% 97%;
 
     /* Warm cream secondary */
@@ -95,6 +112,8 @@ All colors MUST be HSL.
 
     --accent: 15 75% 60%;
     --accent-foreground: 25 25% 8%;
+
+/* Animated Couple Section Styles - global scope */
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 45 15% 92%;

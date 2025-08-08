@@ -14,7 +14,7 @@ const Header = () => {
           {/* Logo */}
           <div  className="flex-shrink-0">
   <a href="/">
-    <img src="/lovable-uploads/mainlogo.png" alt="Manyavar Logo" className="h-12 w-auto" />
+    <img src="lovable-uploads/mainlogo.png" alt="Manyavar Logo" className="h-12 w-auto" />
   </a>
           </div>
           
